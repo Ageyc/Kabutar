@@ -40,13 +40,7 @@ function findDataInColumn(searchValue, columnName, sheet) {
   return -1;
 }
 
-function getColumnIndex(sheet, columnName) {
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  
-  for (var i = 0; i < headers.length; i++) {
-    if (headers[i] === columnName) {
-      return i + 1;
-    }
+
   }
   
   throw new Error('Column ' + columnName + ' not found in the sheet');
