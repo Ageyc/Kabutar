@@ -9,7 +9,7 @@ function emailExists(email, sheet) {
     }
   }
 
-  return false;
+
 }
 
 function addDataToSheet(email, password, displayname, bio, biolink) {
