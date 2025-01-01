@@ -7,7 +7,7 @@ function checkPassword(email, password) {
   try {
     var rowNumber = findDataInColumn(email, emailColumnName, sheet);
     
-    if (rowNumber !== -1) {
+    if (rowNumber !== -
       var passwordFromSheet = sheet.getRange(rowNumber, getColumnIndex(sheet, passwordColumnName)).getValue();
 
       if (password == passwordFromSheet) {
